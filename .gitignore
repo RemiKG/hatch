@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.local
+*.log
+web/dist/
+.DS_Store
+*-sa.json
+_secrets/
