@@ -1,11 +1,15 @@
 {
   "name": "hatch",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
+  "description": "Hatch. — From bytes to a dashboard before the coffee's done. Cold-starts a fresh Splunk index into a verified, clickable Dashboard Studio app in ~2 minutes.",
   "scripts": {
     "dev:server": "node --env-file=.env server/index.mjs",
-    "start": "node --env-file=.env server/index.mjs"
+    "dev:web": "cd web && npm run dev",
+    "build:web": "cd web && npm install && npm run build",
+    "start": "node --env-file=.env server/index.mjs",
+    "install:all": "npm install && cd web && npm install"
   },
   "dependencies": {
     "express": "^4.21.2"
