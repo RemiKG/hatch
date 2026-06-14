@@ -1,0 +1,9 @@
+node_modules
+web/node_modules
+web/dist
+.env
+.env.local
+*-sa.json
+_secrets/
+.git
+*.log
